@@ -1,0 +1,42 @@
+.flex-container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-evenly;
+  width: 100%;
+  margin-bottom: 20px;
+}
+
+.text-align-center {
+  text-align: center;
+}
+
+@media screen and (max-width: 757px) {
+  .flex-container {
+    flex-direction: column-reverse;
+    & > button {
+      margin-top: 5px;
+    }
+    & .card:last-child {
+      margin-bottom: 20px;
+    }
+  }
+  table.default-table {
+    font-size: 80%;
+    color: white;
+    background-color: var(--media-bg1);
+  }
+}
+
+@media screen and (min-width: 758px) and (max-width: 1169px)  {
+  .flex-container {
+    //flex-direction: column-reverse;
+    & .card:first-child {
+      margin-right: 20px;
+      font-size: 80%;
+    }
+  }
+  table.default-table {
+    background-color: var(--media-bg2);
+  }
+}

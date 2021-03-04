@@ -1,0 +1,46 @@
+
+:root {
+  --main-bg: rgba(163, 163, 163, 0.7);
+  --media-bg1: rgba(40, 136, 103, 0.7);
+  --media-bg2: rgb(154, 124, 68);
+}
+
+@import "forms";
+@import "grid";
+
+body {
+  font-family: "Open Sans", "Helvetica Neue", sans-serif;
+}
+
+.text-white {
+  color: white;
+}
+
+.jumbotron {
+  padding: 1.3rem 1rem;
+  margin-bottom: 2rem;
+  background-color: var(--main-bg);
+  background-clip: border-box;
+  border: 3px solid rgb(0, 83, 161);
+  border-radius: 0.3rem;
+}
+
+.jumbotron h1 {
+  font-size: 1.6rem;
+  color: #003f65;
+  font-family: 'sans-serif', cursive;
+  font-weight: 700;
+  text-shadow: 3px 3px 0 #eb452b,
+  6px 6px 0 #efa032,
+  10px 10px 0 #46b59b,
+  15px 15px 0 #017e7f;
+}
+
+@media screen and (min-width: 758px) {
+  .jumbotron {
+    padding: 2rem 2rem;
+    & h1 {
+      font-size: 2.8rem;
+    }
+  }
+}
